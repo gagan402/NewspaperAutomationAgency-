@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bce.bce.tableviewcustomerController">
+   <children>
+      <Label layoutX="250.0" layoutY="20.0" text="CUSTOMER PANEL" textFill="#25058c">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="85.0" text="AREA">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="88.0" text="PAPERS">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboAreas" editable="true" layoutX="116.0" layoutY="87.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboPapers" editable="true" layoutX="507.0" layoutY="88.0" prefWidth="150.0" />
+      <Button layoutX="292.0" layoutY="88.0" mnemonicParsing="false" onAction="#doFilter" text="FILTER" textFill="#150196">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="675.0" layoutY="87.0" mnemonicParsing="false" onAction="#doFetch" text="FETCH" textFill="#2b018e">
+         <font>
+            <Font name="Bookman Old Style Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblCusto" layoutX="44.0" layoutY="134.0" prefHeight="343.0" prefWidth="707.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="184.0" layoutY="501.0" mnemonicParsing="false" onAction="#ExportToExcel" text="EXPORT TO EXCEL AND PRINT" textFill="#030599">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font></Button>
+      <ImageView fitHeight="63.0" fitWidth="200.0" layoutX="582.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@customerss.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="178.60003662109375" layoutX="393.0" layoutY="60.0" startX="-143.00001525878906" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="697.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bce.bce.hawkermanagerController">
+    <children>
+        <Label layoutX="173.0" layoutY="14.0" text="HAWKER MANAGER" textFill="#18038e">
+            <font>
+                <Font name="Times New Roman" size="36.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="161.0" fitWidth="119.0" layoutX="544.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@360_F_253236095_BPDhVRhyZ3S0k794cj1RSTyW6EA4k20m.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="86.0" layoutY="151.0" text="MOBILE NO.">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="24.0" layoutY="96.0" text="HAWKER'S  NAME">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="209.0" text="DATE OF JOINING">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="113.0" layoutY="261.0" text="ADDRESS">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="67.0" layoutY="318.0" text="TOTAL AREAS">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="374.0" text="ALLOCATED AREAS">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="19.0" layoutY="427.0" text="UPLOAD  AADHAAR CARD ">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="473.0" layoutY="96.0" onMouseClicked="#doSearchNames" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@searchicon.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtMobile" layoutX="251.0" layoutY="153.0" prefHeight="26.0" prefWidth="215.0" />
+        <DatePicker fx:id="dob" layoutX="251.0" layoutY="211.0" prefHeight="26.0" prefWidth="215.0" />
+        <TextField fx:id="txtAddress" layoutX="251.0" layoutY="263.0" prefHeight="26.0" prefWidth="215.0" />
+        <TextField fx:id="txtAllocatedAreas" layoutX="251.0" layoutY="374.0" prefHeight="26.0" prefWidth="215.0" />
+        <ImageView fx:id="Pic" fitHeight="150.0" fitWidth="290.0" layoutX="315.0" layoutY="427.0" onMouseClicked="#doSelectPic" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@temp.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="67.0" layoutY="609.0" mnemonicParsing="false" onAction="#doEnroll" text="ENROLL" textFill="#06028e">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="222.0" layoutY="609.0" mnemonicParsing="false" onAction="#doUpdate" text="UPDATE" textFill="#06028e">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="379.0" layoutY="609.0" mnemonicParsing="false" onAction="#doFire" prefHeight="34.0" prefWidth="102.0" text="FIRE" textFill="#06028e">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="503.0" layoutY="609.0" mnemonicParsing="false" onAction="#doNew" prefHeight="34.0" prefWidth="102.0" text="NEW" textFill="#06028e">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+        </Button>
+        <Label fx:id="txtxPath" layoutX="24.0" layoutY="484.0" text="PICPATH" visible="false" />
+
+        <ComboBox fx:id="combohName" editable="true" layoutX="251.0" layoutY="99.0" prefHeight="26.0" prefWidth="215.0" />
+      <ComboBox fx:id="txtTotalAreas" editable="true" layoutX="251.0" layoutY="321.0" onAction="#doOnTotalComboClick" prefHeight="26.0" prefWidth="215.0" />
+      <Line endX="190.5999755859375" layoutX="332.0" layoutY="54.0" startX="-158.00003051757812" strokeWidth="2.0" />
+
+    </children>
+   <rotationAxis>
+      <Point3D y="1.0" z="1.0" />
+   </rotationAxis>
+</AnchorPane>

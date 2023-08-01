@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="679.0" prefWidth="687.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bce.bce.customermanagerController">
+   <children>
+      <Label layoutX="160.0" layoutY="14.0" text="CUSTOMER MANAGER" textFill="#200296">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="74.0" fitWidth="169.0" layoutX="463.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@custo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="49.0" layoutY="69.0" text="CUSTOMER MOBILE NO.">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="281.0" layoutY="69.0" text="CUSTOMER NAME">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="SearchMobile" fitHeight="32.0" fitWidth="35.0" layoutX="210.0" layoutY="99.0" onMouseClicked="#doSearchMobile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@searchicon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="281.0" layoutY="103.0" />
+      <Label layoutX="95.0" layoutY="170.0" text="AVAILABLE PAPERS">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" layoutY="170.0" text="SELECTED PAPERS">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="204.0" text="PAPER NAME">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="204.0" text="PRICE(Rs./-)">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="204.0" text="PAPER NAME">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="534.0" layoutY="204.0" text="PRICE(Rs./-)">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listApaperName" editable="true" layoutX="49.0" layoutY="240.0" onMouseClicked="#doSelectOnClick" prefHeight="200.0" prefWidth="169.0" />
+      <ListView fx:id="listApaperPrice" editable="true" layoutX="224.0" layoutY="240.0" prefHeight="200.0" prefWidth="106.0" />
+      <ListView fx:id="listSpaperName" editable="true" layoutX="368.0" layoutY="240.0" onMouseClicked="#doUnSelectOnClick" prefHeight="200.0" prefWidth="159.0" />
+      <Label layoutX="591.0" layoutY="516.0" />
+      <ListView fx:id="listSpaperPrice" editable="true" layoutX="534.0" layoutY="240.0" prefHeight="200.0" prefWidth="99.0" />
+      <Separator layoutX="348.0" layoutY="153.0" orientation="VERTICAL" prefHeight="312.0" prefWidth="7.0" />
+      <Separator layoutX="22.0" layoutY="150.0" prefHeight="5.0" prefWidth="625.0" />
+      <Separator layoutX="27.0" layoutY="465.0" prefHeight="6.0" prefWidth="626.0" />
+      <Label layoutX="38.0" layoutY="480.0" text="CUSTOMER E-MAIL">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="480.0" text="CUSTOMER ADDRESS">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="38.0" layoutY="503.0" prefHeight="26.0" prefWidth="270.0" />
+      <TextField fx:id="txtAdd" layoutX="339.0" layoutY="503.0" prefHeight="26.0" prefWidth="305.0" />
+      <Label layoutX="39.0" layoutY="546.0" text="AREA">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboArea" editable="true" layoutX="38.0" layoutY="568.0" onAction="#ClickOnArea" prefWidth="150.0" />
+      <Label layoutX="260.0" layoutY="546.0" text="HAWKER NAME">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHawker" layoutX="260.0" layoutY="568.0" />
+      <Label layoutX="471.0" layoutY="546.0" text="DATE OF START">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dob" layoutX="471.0" layoutY="568.0" />
+      <Button layoutX="38.0" layoutY="612.0" mnemonicParsing="false" onAction="#doSubscribe" prefHeight="47.0" prefWidth="135.0" text="SUBSCRIBE" textFill="#06219c">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="271.0" layoutY="612.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="47.0" prefWidth="126.0" text="UPDATE" textFill="#06219c">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="495.0" layoutY="612.0" mnemonicParsing="false" onAction="#doUnsubscribe" prefHeight="47.0" prefWidth="162.0" text="UNSUBSCRIBE" textFill="#06219c">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboMobile" editable="true" layoutX="48.0" layoutY="103.0" prefWidth="150.0" />
+      <Line endX="287.20001220703125" endY="3.814697265625E-6" layoutX="260.0" layoutY="54.0" startX="-100.0" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

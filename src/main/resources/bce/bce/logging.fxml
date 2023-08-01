@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="484.0" prefWidth="712.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bce.bce.loggingController">
+   <children>
+      <Label layoutX="238.0" layoutY="23.0" text="ADMIN LOGIN" textFill="#05059c">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="366.0" fitWidth="325.0" layoutX="41.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="391.0" layoutY="138.0" text="ADMIN PASSCODE">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pass" layoutX="447.0" layoutY="202.0" prefHeight="40.0" prefWidth="191.0" promptText="********************************" />
+      <ImageView fx:id="log" fitHeight="73.0" fitWidth="200.0" layoutX="450.0" layoutY="287.0" onMouseClicked="#doLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IN.png" />
+         </image>
+      </ImageView>
+      <Line endX="147.20001220703125" endY="7.62939453125E-6" layoutX="346.0" layoutY="63.0" startX="-108.00001525878906" startY="7.62939453125E-6" strokeWidth="2.0" />
+      <Line endX="224.0" endY="7.62939453125E-6" layoutX="142.0" layoutY="102.0" startX="-100.0" strokeWidth="3.0" />
+      <Line endX="224.0" endY="0.456512451171875" layoutX="142.0" layoutY="411.0" startX="-100.0" strokeWidth="3.0" />
+      <Line endX="-101.29290771484375" endY="309.2928771972656" layoutX="468.0" layoutY="101.0" startX="-101.29290771484375" startY="0.29290008544921875" strokeWidth="3.0" />
+      <Line endX="-95.0" endY="49.00000762939453" layoutX="136.0" layoutY="53.0" startX="-94.70710754394531" startY="357.2928771972656" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

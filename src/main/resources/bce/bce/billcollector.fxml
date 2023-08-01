@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="442.0" prefWidth="571.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bce.bce.billcollectorController">
+   <children>
+      <Label layoutX="149.0" layoutY="14.0" text="BILL COLLECTOR" textFill="#230696">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="90.0" text=" CUSTOMER MOBILE NO.">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Button layoutX="231.0" layoutY="139.0" mnemonicParsing="false" onAction="#doBillingDetails" text="BILL DETAILS" textFill="#1a056e">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="79.0" layoutY="194.0" text="AMOUNT">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label layoutX="79.0" layoutY="242.0" text="FROM(DATE)">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label layoutX="79.0" layoutY="291.0" text="TO(DATE)">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <TextField fx:id="txtAmount" layoutX="234.0" layoutY="196.0" prefHeight="26.0" prefWidth="211.0" />
+      <Button layoutX="181.0" layoutY="351.0" mnemonicParsing="false" onAction="#doPaymentDone" text="PAYMENT DONE" textFill="#120289">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font></Button>
+      <ImageView fitHeight="69.0" fitWidth="67.0" layoutX="65.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@coll.png" />
+         </image></ImageView>
+      <ComboBox fx:id="comboMobile" editable="true" layoutX="361.0" layoutY="93.0" prefWidth="150.0" />
+      <DatePicker fx:id="dateFrom" layoutX="234.0" layoutY="244.0" prefHeight="26.0" prefWidth="211.0" />
+      <DatePicker fx:id="dateTo" layoutX="234.0" layoutY="293.0" prefHeight="26.0" prefWidth="211.0" />
+      <Label layoutX="445.0" layoutY="196.0" prefHeight="26.0" prefWidth="47.0" text="Rs/-">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Line endX="203.20001220703125" endY="-7.62939453125E-6" layoutX="250.0" layoutY="55.0" startX="-100.0" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

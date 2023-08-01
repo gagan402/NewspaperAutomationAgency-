@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bce.bce.papermasterController">
+    <children>
+        <Label layoutX="158.0" layoutY="11.0" prefHeight="40.0" prefWidth="270.0" text="PAPER MASTER" textFill="#061791">
+            <font>
+                <Font name="Times New Roman" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="91.0">
+            <font>
+                <Font name="Sylfaen" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="164.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="442.0" layoutY="160.0" text="Rs/-">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="comboNewspaper" editable="true" layoutX="279.0" layoutY="96.0" prefHeight="26.0" prefWidth="217.0" />
+        <TextField fx:id="txtPrice" layoutX="279.0" layoutY="164.0" />
+        <Button layoutX="37.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnAvail" text="AVAIL" textFill="#2f07a6">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="210.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnEdit" text="EDIT" textFill="#2f07a6">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="364.0" layoutY="240.0" mnemonicParsing="false" onAction="#doWithdraw" text="WITHDRAW" textFill="#2f07a6">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+        </Button>
+        <Label layoutX="37.0" layoutY="95.0" text="NEWSPAPER  NAME">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="163.0" text="NEWSPAPER  PRICE">
+            <font>
+                <Font name="Cambria" size="24.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="44.0" fitWidth="67.0" layoutX="440.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@1000_F_28935603_vvuSuQ8tYpzP1qmHdcJXbOUniyUO4wLp.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="505.0" layoutY="94.0" onMouseClicked="#doPaperSearch" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@searchicon.png" />
+            </image>
+        </ImageView>
+      <Line endX="168.20001220703125" endY="-3.814697265625E-6" layoutX="258.0" layoutY="53.0" startX="-106.80000305175781" startY="-3.814697265625E-6" strokeWidth="2.0" />
+
+    </children>
+</AnchorPane>

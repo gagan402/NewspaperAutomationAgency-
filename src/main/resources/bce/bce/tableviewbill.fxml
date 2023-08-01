@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bce.bce.tableviewbillController">
+   <children>
+      <Label layoutX="300.0" layoutY="14.0" text="BILL BOARD" textFill="#04048e">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radPending" layoutX="41.0" layoutY="61.0" mnemonicParsing="false" text="PENDING">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="rad" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radPaid" layoutX="42.0" layoutY="95.0" mnemonicParsing="false" text="PAID" toggleGroup="$rad">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="175.0" layoutY="73.0" mnemonicParsing="false" onAction="#doSearching" text="SEARCH" textFill="#200394">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="376.0" layoutY="78.0" text="MOBILE">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboMobile" editable="true" layoutX="456.0" layoutY="77.0" prefWidth="150.0" />
+      <Button layoutX="624.0" layoutY="73.0" mnemonicParsing="false" onAction="#doBillHistory" text="BILL HISTORY" textFill="#060496">
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="47.0" layoutY="149.0" prefHeight="348.0" prefWidth="707.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="253.0" layoutY="525.0" mnemonicParsing="false" onAction="#doExport" text="EXPORT TO EXCEL" textFill="#12027b">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="465.0" layoutY="539.0" />
+      <ImageView fitHeight="82.0" fitWidth="138.0" layoutX="616.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@billboard.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="114.20001220703125" endY="3.814697265625E-6" layoutX="401.0" layoutY="54.0" startX="-100.0" strokeWidth="2.0" />
+   </children>
+</AnchorPane>
